@@ -15,6 +15,12 @@
 		77386C0D1EB1A8F400B447DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77386C0B1EB1A8F400B447DC /* LaunchScreen.storyboard */; };
 		77386C181EB1A8F400B447DC /* CoreDataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77386C171EB1A8F400B447DC /* CoreDataDemoTests.swift */; };
 		77386C231EB1A8F400B447DC /* CoreDataDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77386C221EB1A8F400B447DC /* CoreDataDemoUITests.swift */; };
+		77386C3F1EB1B23B00B447DC /* customeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77386C3E1EB1B23B00B447DC /* customeTableViewCell.swift */; };
+		77386C411EB1C0FA00B447DC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77386C401EB1C0FA00B447DC /* Network.swift */; };
+		77386C491EB1F38A00B447DC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77386C481EB1F38A00B447DC /* SwiftyJSON.swift */; };
+		777A9E621EB6F41600F6E293 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777A9E611EB6F41600F6E293 /* CoreDataStack.swift */; };
+		777A9E641EB6F5CF00F6E293 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777A9E631EB6F5CF00F6E293 /* APIService.swift */; };
+		77BC84341EB321AD00AE3678 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BC84331EB321AD00AE3678 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		77386C1E1EB1A8F400B447DC /* CoreDataDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77386C221EB1A8F400B447DC /* CoreDataDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoUITests.swift; sourceTree = "<group>"; };
 		77386C241EB1A8F400B447DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77386C3E1EB1B23B00B447DC /* customeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = customeTableViewCell.swift; path = CoreDataDemo/customeTableViewCell.swift; sourceTree = "<group>"; };
+		77386C401EB1C0FA00B447DC /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		77386C481EB1F38A00B447DC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		777A9E611EB6F41600F6E293 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		777A9E631EB6F5CF00F6E293 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		77BC84331EB321AD00AE3678 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 		77386BF31EB1A8F400B447DC = {
 			isa = PBXGroup;
 			children = (
+				77386C3E1EB1B23B00B447DC /* customeTableViewCell.swift */,
 				77386BFE1EB1A8F400B447DC /* CoreDataDemo */,
 				77386C161EB1A8F400B447DC /* CoreDataDemoTests */,
 				77386C211EB1A8F400B447DC /* CoreDataDemoUITests */,
@@ -99,7 +112,9 @@
 		77386BFE1EB1A8F400B447DC /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				77386C3B1EB1AAC200B447DC /* Data Model */,
 				77386BFF1EB1A8F400B447DC /* AppDelegate.swift */,
+				77BC84331EB321AD00AE3678 /* DetailViewController.swift */,
 				77386C011EB1A8F400B447DC /* ViewController.swift */,
 				77386C031EB1A8F400B447DC /* Main.storyboard */,
 				77386C091EB1A8F400B447DC /* Assets.xcassets */,
@@ -126,6 +141,17 @@
 				77386C241EB1A8F400B447DC /* Info.plist */,
 			);
 			path = CoreDataDemoUITests;
+			sourceTree = "<group>";
+		};
+		77386C3B1EB1AAC200B447DC /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				777A9E631EB6F5CF00F6E293 /* APIService.swift */,
+				77386C481EB1F38A00B447DC /* SwiftyJSON.swift */,
+				777A9E611EB6F41600F6E293 /* CoreDataStack.swift */,
+				77386C401EB1C0FA00B447DC /* Network.swift */,
+			);
+			name = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77386C3F1EB1B23B00B447DC /* customeTableViewCell.swift in Sources */,
+				77386C411EB1C0FA00B447DC /* Network.swift in Sources */,
 				77386C021EB1A8F400B447DC /* ViewController.swift in Sources */,
 				77386C081EB1A8F400B447DC /* CoreDataDemo.xcdatamodeld in Sources */,
+				77386C491EB1F38A00B447DC /* SwiftyJSON.swift in Sources */,
 				77386C001EB1A8F400B447DC /* AppDelegate.swift in Sources */,
+				77BC84341EB321AD00AE3678 /* DetailViewController.swift in Sources */,
+				777A9E641EB6F5CF00F6E293 /* APIService.swift in Sources */,
+				777A9E621EB6F41600F6E293 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +543,7 @@
 				77386C291EB1A8F400B447DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77386C2A1EB1A8F500B447DC /* Build configuration list for PBXNativeTarget "CoreDataDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +552,7 @@
 				77386C2C1EB1A8F500B447DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77386C2D1EB1A8F500B447DC /* Build configuration list for PBXNativeTarget "CoreDataDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +561,7 @@
 				77386C2F1EB1A8F500B447DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
